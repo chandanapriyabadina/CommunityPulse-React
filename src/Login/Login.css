@@ -1,0 +1,210 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100%;
+}
+
+/* Login Page with background image */
+.login-page {
+  position: relative; /* For absolute positioning of overlay text */
+  background-image: url('https://img.freepik.com/premium-vector/internet-connection-network-connection-background-with-low-poly-dot-circle-line-light-digital-technology-backdrop_71208-248.jpg?ga=GA1.1.649445851.1735971836&semt=ais_hybrid');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+/* Overlay Text */
+.overlay-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(236, 18, 185);
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 10%;
+  text-align: left;
+  margin-left: -25%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+/* Login Container */
+.login-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 30%;
+  height: 100%;
+  max-width: 20;
+  margin-right: 300px;
+  margin-top: 15%;
+}
+
+/* Login Box */
+.login-box {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(4, 200, 235, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+}
+
+/* Title */
+.login-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #f60b98;
+  text-align: left;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+/* Input Groups */
+.input-group {
+  width: 100%;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #21a1eb;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #0328bb;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #0b0b0b;
+}
+
+.input-group input:focus {
+  border-color: #ee07bc;
+  outline: none;
+}
+
+/* Password Container */
+.password-container {
+  display: flex;
+  align-items: center;
+  position: relative; /* Ensure button is positioned relative to container */
+  width: 100%;
+}
+
+.password-container input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #3908ed;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #0670ea;
+  padding-right: 50px; /* Add space for the toggle button */
+}
+
+.password-container input:focus {
+  border-color: #ee07bc;
+  outline: none;
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 10px; /* Align button to the right inside container */
+  top: 50%; /* Vertically center the button */
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #007bff;
+  z-index: 10; /* Ensure button is clickable above input */
+}
+
+.password-toggle-btn:hover {
+  color: #0056b3;
+}
+
+/* Remember Me Section */
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.remember-me label {
+  font-size: 14px;
+  color: #fa0bd2;
+}
+
+.remember-me input {
+  transform: scale(1.2);
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #ee00ffe4;
+  border: none;
+  border-radius: 5px;
+  color: rgb(2, 135, 223);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.submit-btn:focus {
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .login-box {
+    padding: 20px;
+  }
+
+  .login-box h2 {
+    font-size: 20px;
+  }
+
+  .input-group input {
+    font-size: 16px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+  }
+}

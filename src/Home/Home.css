@@ -1,0 +1,135 @@
+/* Fullscreen Container - Updated to Cover Full Screen */
+.fullscreen-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh; /* Fullscreen height */
+  width: 100vw; /* Fullscreen width */
+  padding: 40px;
+  background: linear-gradient(to right, #7daebb, #dab5da, #6cbfd6);  color: #333;
+  color: #ffffff;
+  box-sizing: border-box; /* Includes padding in height/width calculations */
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.content .title {
+  font-size: 3rem; /* Larger title for fullscreen section */
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  color: #070707;
+}
+
+.content .description {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  color: #130101;
+}
+
+.content .explore-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: linear-gradient(to right, #601c57, #8aa5a5, #060c77);  color: #333;
+  color: #110300;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.content .explore-button:hover {
+  background: #376340;
+  color: #ffffff;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container .image {
+  max-width: 90%;
+  max-height: 90%; /* Limit image height within the fullscreen */
+  border-radius: 35px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Remaining sections are unchanged */
+
+/* Card Grid Section */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 40px;
+  background: linear-gradient(to right, #64778b, #ffcccb, #347a8e);  color: #333;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Individual Card */
+.card {
+  background: linear-gradient(to right, #c289d0, #547792, #62c5c5);  color: #333;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Image */
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Card Text */
+.card-text {
+  padding: 15px;
+  font-size: 1rem;
+  color: #060606;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  line-height: 1.6;
+}
+/* New Image Section */
+.new-image-section {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(to right, #64778b, #ffcccb, #347a8e);  color: #333;
+  color: rgb(237, 236, 236);
+  padding: 40px 20px;
+}
+
+.new-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.new-image-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  color: #f9f9f9; /* Light text */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+

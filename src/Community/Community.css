@@ -1,0 +1,90 @@
+/* Container Styles */
+.nutrition-container {
+  background: linear-gradient(to right, #21364c, #a27a94, #347a8e);
+  color: #333;
+  font-family: cursive;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+
+/* List Layout */
+.nutrition-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Ensures two cards per row */
+  gap: 20px; /* Space between cards */
+  justify-items: center; /* Center align cards */
+  padding: 20px 0;
+  margin: 0 auto; /* Center the grid horizontally */
+  max-width: 1200px; /* Optional: limit the max width */
+}
+
+/* Card Styles */
+.nutrition-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%; /* Makes card take full available space in the grid cell */
+  max-width: 300px; /* Ensures card does not exceed 300px width */
+  text-align: center;
+  background: linear-gradient(90deg, #499c9f, #467bb9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.nutrition-item:hover {
+  transform: scale(1.05); /* Add hover effect */
+}
+
+/* Image Styles */
+.nutrition-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Heading Styles */
+h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #fff;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #f1faf9;
+}
+
+p {
+  color: #0a0a0a;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nutrition-list {
+    grid-template-columns: 1fr; /* One card per row on small screens */
+    gap: 15px;
+  }
+
+  .nutrition-item {
+    width: 90%; /* Full width for small devices */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .nutrition-item h2 {
+    font-size: 1.2rem;
+  }
+
+  .nutrition-item p {
+    font-size: 0.9rem;
+  }
+}

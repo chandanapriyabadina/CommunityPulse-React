@@ -1,0 +1,46 @@
+.header {
+    background-color: #313e88;
+    color: white;
+    padding: 10px 20px; /* Adjust padding for proper spacing */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures space between logo and nav */
+  }
+  
+  .logo {
+    font-size: 29px;
+    font-weight: bold;
+    font-style: italic;
+    color: azure;
+  }
+  
+  .nav {
+    margin-left: auto; /* Pushes the nav to the right */
+  }
+  
+  .nav-list {
+    font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;  
+  font-style: italic;
+    color: azure;
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Reset default margins */
+    display: flex;
+    gap: 15px; /* Space between navigation items */
+  }
+  
+  .nav-list li {
+    display: inline;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .nav-list a:hover {
+    color: #c8e6c9; /* Lighter green on hover */
+  }

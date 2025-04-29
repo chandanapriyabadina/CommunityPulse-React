@@ -1,0 +1,74 @@
+/* Footer Container */
+.footer-container {
+  background-color: #004a5c;
+  color: white;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+/* Footer Content Layout */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Footer Sections */
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Section Headings */
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* List Styling */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.footer-section ul li:hover {
+  text-decoration: underline;
+}
+
+/* Let's Chat Button */
+.footer-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #007b8f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.footer-button:hover {
+  background-color: #005f6e;
+  transition: background-color 0.3s ease;
+}
+
+/* Contact Number Styling */
+.footer-section p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}

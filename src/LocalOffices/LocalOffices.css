@@ -1,0 +1,99 @@
+.nutrition-container {
+    background: linear-gradient(to right, #21364c, #a27a94, #347a8e);  color: #333;
+  
+    font-family: cursive;
+    font-weight: bold;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .nutrition-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+    
+    .nutrition-item {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      width: 250px;
+      text-align: center;
+      background: linear-gradient(90deg, #499c9f, #467bb9);
+    }
+    
+    .nutrition-image {
+      width: 100%;
+      height: auto;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    
+    h1 {
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #333;
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+      color: #f1faf9;
+    }
+    
+    p {
+      color: #0a0a0a;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+    
+  
+    @media (max-width: 500px) {
+      .nutrition-container h1 {
+        font-size: 1.8rem;
+      }
+    
+      .nutrition-list {
+        grid-template-columns: 1fr;
+      }
+    
+      .nutrition-image {
+        height: 150px;
+      }
+    
+      .nutrition-item h2 {
+        font-size: 1.2rem;
+      }
+    
+      .nutrition-item p {
+        font-size: 0.8rem;
+      }
+    }
+  
+  
+  
+    @media screen and (max-width: 400px) {
+      h1 {
+        font-size: 2rem; 
+      }
+    
+      .nutrition-list {
+        flex-direction: row; 
+        gap: 15px; 
+      }
+    
+      .nutrition-item {
+        width: 90%; 
+        margin: 0 auto; 
+      }
+      
+      h2 {
+        font-size: 1.2rem; 
+      }
+    
+      p {
+        font-size: 0.9rem; 
+      }
+      
+    }
